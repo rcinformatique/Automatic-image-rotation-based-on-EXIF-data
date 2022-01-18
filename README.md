@@ -7,4 +7,5 @@ $imageinfo = $this->upload->data();
 $full_path = $imageinfo['full_path'];
 
 // vérification des données EXIF et fait une rotation automatique si nécessaire
+
 $this->load->library('image_autorotate', array('filepath' => $full_path));
